@@ -20,7 +20,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
 
     if name and pronoun:
         return func.HttpResponse(
-            f"Hello {name}, nice to know that your pronoun is {pronoun}.",
+            f"Hello {name}, nice to know that your pronoun is this {pronoun}.",
             status_code=200
         )
     else:
